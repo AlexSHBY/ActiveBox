@@ -109,7 +109,10 @@ $(function() {
 
 
 $(function(){
-  $(".close").click (function(){
-    $(".menu").toggleClass("menu-active");
-  })
-})
+  $( ".close" ).click(function(){
+    $( ".menu" ).fadeToggle( 100, "linear", function(){ 
+       console.log("toggle completed"); 
+    });
+  });
+});
+
