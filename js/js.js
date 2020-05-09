@@ -75,11 +75,6 @@ var swiper = new Swiper('.swiper-container', {
   debugger: true,
 });
 
-$(function(){
-  $(".close").click (function(){
-    $(".menu").toggleClass("menu-active");
-  })
-})
 
 $(window).scroll(function(){
   if ($(this).scrollTop() > 100) {
@@ -111,3 +106,10 @@ $(function() {
     }
   });
 });
+
+
+$(function(){
+  $(".close").click (function(){
+    $(".menu").toggleClass("menu-active");
+  })
+})
