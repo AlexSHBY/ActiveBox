@@ -609,9 +609,12 @@ a {
         display: flex;
         flex-direction: column;
         right: 0;
+        top: 0;
+        padding-left: 50px;
+        width: 40%;
+        height: 100vh;
         background-color: #3a3e64;
         z-index: 1;
-        padding: 380px 50px 50px 50px;
         display: none;
     }
     .menu-active{
@@ -621,7 +624,6 @@ a {
         right: 0;
         background-color: #3a3e64;
         z-index: 1;
-        padding: 380px 50px 50px 50px;
     }
     .menu-link{
         margin-left: 0;

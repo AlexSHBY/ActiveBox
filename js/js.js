@@ -96,3 +96,18 @@ function slowScroll (id) {
   }, 500);
   return false;
 }
+
+$(function() {
+  $(".menu-link").on("click", function() {
+    if ($(window).width() < 950) {
+      $( ".menu" ).fadeToggle( 100, "linear", function() { 
+          console.log("toggle completed"); 
+      });
+    }
+  });
+  $(window).on("resize", function() {
+    if ($(window).width() >= 950) {
+        $(".menu").show();
+    }
+  });
+});
